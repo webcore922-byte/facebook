@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <div class=" d-flex justify-content-center align-items-center">
-       <form >
+       <form onsubmit=" return validationSign() " action="home.html" >
          <div class="text-center text-light bg-primary p-2">
             <h2 class="fw-bold">Create Account</h2>
         </div> 
@@ -18,64 +18,64 @@
            <div class="row g-4">
 
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">First Name :</label>
-            <input type="text" class="form-control" placeholder="Enter your first name">
+            <label class="form-label fw-bold text-primary fs-5" id="fnamelabel">First Name :</label>
+            <input type="text" class="form-control shadow-none fw-bold  " placeholder="Enter your first name" id="fname" >
           </div>
 
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">Last Name :</label>
-            <input type="text" class="form-control" placeholder="Enter your last name">
+            <label class="form-label fw-bold text-primary fs-5" id="lnamelabel">Last Name :</label>
+            <input type="text" class="form-control shadow-none fw-bold " placeholder="Enter your last name" id="lname">
           </div>
 
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">Email :</label>
-            <input type="email" class="form-control" placeholder="Enter your email address">
+            <label class="form-label fw-bold text-primary fs-5" id="emaillabel">Email :</label>
+            <input type="text" class="form-control shadow-none fw-bold " placeholder="Enter your email address" id="email">
           </div>
 
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">Phone Number :</label>
-            <input type="tel" class="form-control" placeholder="Enter your phone number">
+            <label class="form-label fw-bold text-primary fs-5" id="phonelabel">Phone Number :</label>
+            <input type="tel" class="form-control shadow-none fw-bold" placeholder="Enter your phone number" id="phone">
           </div>
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">Password :</label>
-            <input type="password" class="form-control" placeholder="Enter your password">
-          </div>
-
-          <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary">Confirm Password :</label>
-            <input type="password" class="form-control" placeholder="Confirm your password">
+            <label class="form-label fw-bold text-primary fs-5" id="passwordlabel">Password :</label>
+            <input type="password" class="form-control shadow-none fw-bold " placeholder="Enter your password" id="password">
           </div>
 
           <div class="col-12 col-md-6">
-            <label class="form-label fw-bold text-primary d-block">Gender :</label>
+            <label class="form-label fw-bold text-primary fs-5" id="confirmpasswordlabel">Confirm Password :</label>
+            <input type="password" class="form-control shadow-none fw-bold " placeholder="Confirm your password" id="confirmPassword">
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label class="form-label fw-bold text-primary d-block fs-5" id="genderlabel">Gender :</label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender">
-              <label class="gender mb-2 fs-5 form-check-label">Male</label>
+              <input class="form-check-input shadow-none" type="radio" name="gender" id="male">
+              <label class="gender mb-2 fs-5 form-check-label" for="male">Male</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gender">
-              <label class="gender mb-2 fs-5">Female</label>
+              <input class="form-check-input shadow-none" type="radio" name="gender" id="female" >
+              <label class="gender  fs-5 form-check-label" for="female">Female</label>
             </div>
           </div>
           <div class="col-12 col-md-6 ">
-            <label class="form-label fw-bold text-primary">Birthdate :</label>
-            <input type="date" class="form-control fw-bold text-primary">
+            <label class="form-label fw-bold text-primary fs-5" id="birthdateLabel">Birthdate :</label>
+            <input type="date" class="form-control fw-bold text-primary shadow-none" id="birthdate">
           </div>
-
-           <div class="col-12 d-flex gap-2 mt-4 ">
-            <button type="reset" class="btn btn-primary px-4 m-2 fw-bold">
+        <div class="col-12 d-flex gap-2 mt-4 ">
+            <button type="reset" class="btn btn-primary px-4 m-2 fw-bold fs-5">
               Reset
             </button>
-            <button type="submit" class="btn btn-primary m-2 px-4 fw-bold">
+            <button type="submit" class="btn btn-primary m-2 px-4 fw-bold fs-5">
               Register
             </button>
           </div>
+
            </div>
         </div>
        </form>
 </div>
-
  <script src="./js/bootstrap.bundle.min.js"></script>
 <script src="./js/all.min.js"></script>
+<script src="./js/newAccount.js"></script>
 </body>
 </html>
